@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Pernikahan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="hero" id="hero">
+    <div class="overlay">
+      <div class="content">
+        <div class="wedding-title">The Wedding Of</div>
+        <img src="rifky-syafitri.png" alt="Rifky & Syafitri" class="couple-name animate-zoom-in" />
+        <div class="greeting">Kepada YTH.</div>
+        <div class="sub-greeting">Bapak/Ibu/Saudara/i</div>
+        <div class="guest-name slide-down" id="guestName">Tamu Undangan</div>
+        <div class="subtitle">Hari bahagia dalam:</div>
+        <div class="countdown" id="countdown"></div>
+        <div class="invitation-text">You’re Invited to Our Wedding</div>
+        <button class="open-button slide-down" onclick="openInvitation()">
+          <span class="icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M2 8L12 13L22 8" stroke="navy" stroke-width="2"/>
+              <rect x="2" y="6" width="20" height="12" rx="2" stroke="navy" stroke-width="2"/>
+            </svg>
+          </span>
+          <span class="button-text">Buka Undangan</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bg-music" src="audio.mp3" loop></audio>
+
+  <div id="home" class="section home-section">
+    <div class="home-content">
+      <img src="IMG.7437.JPG" alt="Foto Mempelai" class="couple-photo animate-on-scroll zoom-in">
+      <div class="wedding-title-home">The Wedding Of</div>
+      <div class="couple-names-home">
+        <span class="name rifky animate-on-scroll slide-in-left">Rifky</span>
+        <span class="ampersand">&</span>
+        <span class="name syafitri animate-on-scroll slide-in-right">Syafitri</span>
+      </div>
+      <div class="wedding-date">Rabu, 03 Juni 2026</div>
+      <div class="scroll-down">
+        <lottie-player src="https://lottie.host/lottes/23236401-scroll-down.json" background="transparent" speed="1" loop autoplay></lottie-player>
+      </div>
+    </div>
+  </div>
+  <div id="mempelai" class="section">Mempelai Section</div>
+  <div id="acara" class="section">Acara Section</div>
+  <div id="rsvp" class="section">RSVP Section</div>
+  <div id="thanks" class="section">Thanks Section</div>
+
+  <nav class="bottom-nav" id="navbar">
+    <a href="#home" class="nav-item active"><i class="fa-solid fa-house"></i><span>Home</span></a>
+    <a href="#mempelai" class="nav-item"><i class="fa-solid fa-ring"></i><span>Mempelai</span></a>
+    <a href="#acara" class="nav-item"><i class="fa-solid fa-calendar-days"></i><span>Acara</span></a>
+    <a href="#rsvp" class="nav-item"><i class="fa-solid fa-envelope-open-text"></i><span>RSVP</span></a>
+    <a href="#thanks" class="nav-item"><i class="fi fi-sr-hand-holding-heart"></i><span>Thanks</span></a>
+  </nav>
+
+  <script src="https://unpkg.com/lottie-web@5.12.0/build/player/lottie.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
