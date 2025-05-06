@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  background: url('bgbody.png') no-repeat center top fixed; /* Background fixed */
+  background: url('home/bgbody.png') no-repeat center top fixed; /* Background fixed */
   background-size: cover;
 }
 
